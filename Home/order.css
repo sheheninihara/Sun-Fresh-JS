@@ -13,7 +13,7 @@ body {
 
 /*--------------Styles for the header----------------*/
 .sunfresh-market{
-    place-items: left;
+    
     text-align:left;
     font-size: 17px;
     background-color: rgb(245,199,26) ;
@@ -586,14 +586,14 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         width: 50%;
-        margin: -10px 0 0 125 px;
+        margin: -10px 0px 0px 125px;
         padding: 10px;
         
        
     }
 
     .search-container i{
-        colors: none;
+        display: none;
     }
 
 
