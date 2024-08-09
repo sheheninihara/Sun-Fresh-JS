@@ -1,0 +1,585 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+   
+}
+
+.sunfresh-market{
+    place-items: left;
+    text-align:left;
+    font-size: 17px;
+    background-color: rgb(245,199,26) ;
+    display: block;
+    color:black;
+    padding: 5px;
+    margin-left: 0px;
+    padding-left: 130px;
+   
+}
+
+
+/*-------logo-------*/
+.logo-container {
+    display: flex;
+    align-items: center;
+    
+   
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-left: -995px;
+    
+    
+}
+
+.logo-text {
+    margin-left: -33px;
+    font-size: 31px;
+    color: #f1f1f1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*--------navbar--------*/
+header{
+    position: relative;
+    background: rgb(245, 199, 26);
+    width: 100%;
+    height: 85px;
+    box-shadow:var(--box-shadow);
+    display: flex;
+    justify-content: right;
+    z-index: 1;
+    
+    
+}
+header .navbar ul{
+    list-style: none;
+    display: flex;
+  
+}
+
+header .navbar ul li{
+    position: relative;
+    float: left; 
+  
+}
+
+header .navbar ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    color:white;
+    display: block;
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+
+
+header .navbar ul li a:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+header .navbar ul li ul{
+    position: absolute;
+    width: 170px;
+    border-radius: 10px;
+    background: #fff;
+    color:black;
+    display: none;
+}
+
+
+
+header .navbar ul li a:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+
+
+header .navbar ul li ul li{
+    width: 100%;   
+    border-top: 2px solid rgba(0,0,0,.1);
+
+}
+header .navbar ul li ul li a{
+    color:grey;
+    
+
+}
+header .navbar ul li ul li a:hover{
+    color: rgb(245, 199, 26);
+    text-shadow: none;
+}
+
+/*-------order-page-icon-----------*/
+header .navbar ul li a .fa-cart-shopping{
+    color: black;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+
+/*-------order-page-icon-hover----------*/
+.fa-cart-shopping:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    
+}
+
+
+/*-------loyalty-registeration-icon-----------*/
+.fa-id-card{
+    color: black;
+    cursor: pointer;
+}
+
+
+/*-------loaylty-registeration-icon-hover----------*/
+.fa-id-card:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ 
+    
+}
+
+
+/*-------contact-us-icon-----------*/
+.fa-phone{
+    color: black;
+    padding-left: -10px;
+    cursor: pointer;
+}
+
+
+/*-------contact-us-icon-hover----------*/
+.fa-phone:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+
+/*-----------search-bar------------*/
+
+.search-container{
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 110%;
+    margin: -57px 0 0 -580px;
+}
+
+
+.search-container i{
+    margin-right: 5px;
+    color: grey;
+}
+
+#search{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: transparent;
+    
+}
+
+
+/*------------------form------------------------*/
+
+
+.loyalty-form {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.loyalty-form h1 {
+    font-weight: bolder;
+    font-size: 40px;
+    
+}
+
+.loyalty-form h1::after{
+    background-color:#4caf50 ;
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    display: block;
+    margin: 0 0 0 60px;
+}
+
+.loyalty-form form {
+    width: 40%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(245, 199, 26);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-left, .form-right {
+    width: 45%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-bottom {
+    width: 100%;
+}
+
+.form-bottom button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4eb060;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-bottom button:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    
+}
+.loyalty-advantages {
+    width: 40%;
+    margin-top: 30px;
+    background-color: rgb(245, 199, 26);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+}
+
+.loyalty-advantages h2 {
+    margin-top: -5px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.loyalty-advantages ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+.loyalty-advantages ul strong{
+    color:black;
+}
+
+
+
+
+
+
+.form-submit-button{
+    margin-top: 40px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------footer-----------------------*/
+footer {
+    background-color: rgb(245, 199, 26);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.footer-col {
+    flex: 1;
+    margin-left: 30px;
+}
+
+.qlnk{
+    margin-left: 5rem;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    bottom: -5px;
+}
+
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col ul li {
+    padding: 5px 0px;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-col ul li a:hover {
+    opacity: 1;
+}
+
+.footer-col input {
+    border: none;
+    width: 100%;
+    height: 35px;
+    display: block;
+    padding-left: 10px;
+    margin: 5px 0;
+}
+
+.footer-col .inputSubmit {
+    padding: 0px 10px;
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+.col p {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.social-icons a:hover {
+    color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+    /*-----------footer---------------------*/
+    
+        .row {
+            flex-direction: column;
+            padding: 20px;
+            
+        }
+        .footer-col .qlnk h4{
+            margin-left: -80px;
+        }
+        .footer-col ul {
+            margin-left: -80px;
+        }
+    
+        .footer-col input {
+            width: 100%;
+        }
+    
+    
+    
+    
+    
+    
+       
+
+        .loyalty-form {
+            padding: 10px;
+        }
+    
+        .loyalty-form form {
+            width: 100%;
+        }
+    
+        .form-top {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .form-left, .form-right {
+            width: 100%;
+        }
+    
+        .form-group input,
+        .form-group select {
+            padding: 8px;
+        }
+    
+        .form-bottom button {
+            padding: 10px;
+            font-size: 14px;
+        }
+    
+        .loyalty-advantages {
+            width: 100%;
+        }
+
+        .loyalty-form h1{
+            margin-top: 70px;
+        }
+        
+
+        /*------------navbar/header----------------*/
+        
+        body {
+            font-size: 14px;
+        }
+
+   
+        .sunfresh-market {
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            margin-left: -40px;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            margin-left: -15px;
+        }
+
+   
+        header {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            padding-bottom:15px ;
+        }
+
+        header .navbar ul {
+            flex-direction: row;
+            align-items: center;
+            margin-top: -20px;
+            margin-left: -30px;
+        }
+
+        header .navbar ul li {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        header .navbar ul li a {
+            padding: 10px;
+            margin: 0;
+        }
+
+
+        /*--------------searchbar----------------------*/
+
+        .search-container {
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            margin: -10px 0 0 0;
+            
+        
+        }
+
+        .search-container i{
+            display: none;
+        }
+
+}

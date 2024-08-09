@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+    <!--------Title--------->
+    <title>SunFresh Market</title>
+    
+    <!--------stylesheet------>  
+    <link rel="stylesheet" href="loyalty.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <!--------fav icon-------->
+    <link rel="shortcut icon" href="images/Super Market Logo black.png">
+
+    <!--------font-awesome-cdn-------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <header>
+        
+        <!---------logo------------>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <h1 class="logo-text">SunFresh Market</h1>
+        </div>
+            
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./products.html">PRODUCTS</a>
+                    <ul>
+                        <li><a href="vegetable.html">VEGTABLES</a></li>
+                        <li><a href="cosmetics.html">COSMETIC & SKINCARE</a></li>
+                        <li><a href="dairy.html">DAIRY PRODUCTS</a></li>
+                      
+                    </ul> 
+                </li>
+                <li><a href="./about -us.html">ABOUT</a></li>
+    
+                <!-------order-page-icon----------->
+                <li><a href="./order.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <!-------loyalty-registeration-icon----------->
+                <li><a href="./loyalty-reg.html"><i class="fa-solid fa-id-card"></i></a></li>
+                <!-------contact-us-icon----------->
+                <li><a href="./#"><i class="fa-solid fa-phone"></i></a></li>
+    
+            </ul>
+    
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search" placeholder="Search">
+            </div>
+            
+        </nav>
+    </header>
+
+
+
+
+
+
+<section class="loyalty-form">
+    <h1>LOYALTY REGISTRATION</h1>
+
+    <!-------------------------form ---------------------------->
+    <form action="#">
+        <!---------------------top section of the form --------------------------->
+        <div class="form-top">
+            <!----------------------left side of the form---------------- -->
+            <div class="form-left">
+                <div class="form-group">
+                    <label for="fullName">Name:</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter Full Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter E-mail" required>
+                </div>
+
+                
+
+                <div class="form-group">
+                    <label for="loyalty">Loyalty Scheme:</label>
+                    <select name="loyalty" id="loyalty">
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                        <option value="platinum">Platinum</option>
+                    </select>
+                </div>
+            </div>
+
+            <!------------------right side of the form ------------------------>
+            <div class="form-right">
+                
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password"
+                           id="password"
+                           name="password"
+                           placeholder="Enter Password"/>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password"
+                           id="confirmPassword"
+                           name="confirmPassword"
+                           placeholder="Confirm Password"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone No:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" required>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------- bottom section of the form---------------------------- -->
+        <div class="form-bottom">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+
+    <!------------------ advantages of loyalty schemes--------------------- -->
+    <div class="loyalty-advantages">
+        <h2>Advantages of Our Loyalty Schemes</h2>
+        <ul>
+            <li><strong>Silver :</strong>Exclusive discounts ,offers ,bonus reward points.</li>
+            <li><strong>Gold   :</strong>Higher discounts , access to exclusive events.</li>
+            <li><strong>Platinum :</strong>Free shipping, invitations to VIP events.</li>
+        </ul>
+    </div>
+</section>
+
+
+
+    <!------------footer--------------->
+<footer>
+    <section class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Your go-to for fresh, quality groceries. We're dedicated to delighting customers with top-notch ingredients and convenience.</p>    
+            </div>
+
+            <div class="footer-col">
+                <div class="qlnk">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./about -us.html">About</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="loyalty-reg.html">Registration</a></li>
+                    </ul>
+                 </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <form action="">
+                    <input type="text" placeholder="Your name" class="inputName">
+                    <input type="email" placeholder="Enter Company Email" class="inputEmail">
+                    <input type="submit" value="Submit" class="inputSubmit">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>&#169; 2024 SunFresh Market. All Rights Reserved.</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+</footer>
+
+</body>
+</html>
